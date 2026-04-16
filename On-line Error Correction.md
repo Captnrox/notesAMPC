@@ -18,7 +18,7 @@ OEC ensures:
 
 # Thresholds
 ---
-Protection against byzantine errors as long as **n = 4t + 1** and against lost messages or fail-stop errors as long as **n = 3t + 1**, as well as the [Reed Solomon](Reed Solomon.md)'s threshold **∣S∣≥d+2r+1**. The protocol will  in the worst case, need this error threshold to succeed.
+Protection against byzantine errors as long as **n = 4t + 1** and against lost messages or fail-stop errors as long as **n = 3t + 1**, as well as the [Reed Solomon](Reed%20Solomon.md)'s threshold **∣S∣≥d+2r+1**. The protocol will  in the worst case, need this error threshold to succeed.
 
 # Guarantee
 ---

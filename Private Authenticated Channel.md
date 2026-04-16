@@ -5,4 +5,4 @@ Simplest communication primitive in [distributed](.md) cryptographic protocols, 
   
 As they are [point-to-point](point-to-point.md) they only ensure that each message is sent to one participant.
 
-In [Secret Sharing](Secret Sharing.md) these are used to ensure that the dealer can send to each participant their shares privately. They do not ensure consistency between different recipients.
+In [Secret Sharing](Secret%20Sharing.md) these are used to ensure that the dealer can send to each participant their shares privately. They do not ensure consistency between different recipients.

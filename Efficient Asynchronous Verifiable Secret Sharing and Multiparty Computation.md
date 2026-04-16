@@ -131,19 +131,19 @@ If an AMPC protocol satisfies the termination and the correctness condition with
 ## 2.3 Primitives used
 ---
 
-### [Asynchronous Reliable Broadcast](Asynchronous Reliable Broadcast.md)
+### [Asynchronous Reliable Broadcast](Asynchronous%20Reliable%20Broadcast.md)
 ---
 
-### [Agreement on Core Subset](Agreement on Core Subset.md)
+### [Agreement on Core Subset](Agreement%20on%20Core%20Subset.md)
 ---
 
-### [On-line Error Correction](On-line Error Correction.md)
+### [On-line Error Correction](On-line%20Error%20Correction.md)
 ---
 
 ### Randomness Extraction
 ---
 
-### [(n,t)-Star]((n,t)-Star.md)
+### [(n,t)-Star](%28n%2Ct%29-Star.md)
 ---
 
 # 3. AVSS for Sharing a Single Secret
@@ -169,11 +169,11 @@ The three phases are:
 
 ## 6.1 Preparation Phase
 ---
-Parties interact to generate the *(t,2t)*-sharing of the **Cm + Cr** values. These values must remain information-theoretically secure. Every Pi acts as a dealer and *(t,2t)*-shares **Cm + Cr / n - 2t** values. The parties then agree on a common subset C, of at least n-t parties, that correctly shared the values. The parties then apply the randomness extraction function on the values shared by the parties in C in order to output all the **Cm + Cr** *(t,2t)*-shared values. Since the values shared are random and secure, the output and end result will be also random and secure. The mentioned protocols for this phase are S-Preparation and  P-Preparation. One instance of [ACS](Agreement on Core Subset.md) must be run for the phase to properly work.
+Parties interact to generate the *(t,2t)*-sharing of the **Cm + Cr** values. These values must remain information-theoretically secure. Every Pi acts as a dealer and *(t,2t)*-shares **Cm + Cr / n - 2t** values. The parties then agree on a common subset C, of at least n-t parties, that correctly shared the values. The parties then apply the randomness extraction function on the values shared by the parties in C in order to output all the **Cm + Cr** *(t,2t)*-shared values. Since the values shared are random and secure, the output and end result will be also random and secure. The mentioned protocols for this phase are S-Preparation and  P-Preparation. One instance of [ACS](Agreement%20on%20Core%20Subset.md) must be run for the phase to properly work.
 
 ## 6.2 Input Phase
 ---
-In this phase each Pi will *t*-share its input **xi** by running the correspondent AVSS protocol. If S-MS-Sh was invoked, we call on the S-Input, otherwise if P-MS-Sh is used, we call on P-input. Since we are on an asynchronous network, we must run the [ACS](Agreement on Core Subset.md) protocol again. The parties will from now on consider the inputs of only the Pi that is in C, and assume the others as a default t-sharing of 0.
+In this phase each Pi will *t*-share its input **xi** by running the correspondent AVSS protocol. If S-MS-Sh was invoked, we call on the S-Input, otherwise if P-MS-Sh is used, we call on P-input. Since we are on an asynchronous network, we must run the [ACS](Agreement%20on%20Core%20Subset.md) protocol again. The parties will from now on consider the inputs of only the Pi that is in C, and assume the others as a default t-sharing of 0.
 
 ## 6.3 Computation Phase
 ---

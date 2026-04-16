@@ -4,7 +4,7 @@ The system is considered a completely asynchronous network, where two parties ar
 
 It's also considered that whatever can be securely computed in an asynchronous network, in the presence of a trusted party, can also be computed in a network in which no such party exists. 
 
-The system may have 2 different fault types: [Fail-Stop faults](Fail-Stop Fault.md) and [Byzantine faults](Byzantine fault.md). In the first, the number of faulty parties cannot surpass a third of the total, while, for the system to resist the second, it cannot surpass a fourth of the total parties. The [AVSS](.md) constructed is a [Perfect Asynchronous Verifiable Secret Sharing](.md) scheme contained in the dynamically growing input of the non-faulty parties.
+The system may have 2 different fault types: [Fail-Stop faults](Fail-Stop%20Fault.md) and [Byzantine faults](Byzantine%20fault.md). In the first, the number of faulty parties cannot surpass a third of the total, while, for the system to resist the second, it cannot surpass a fourth of the total parties. The [AVSS](.md) constructed is a [Perfect Asynchronous Verifiable Secret Sharing](.md) scheme contained in the dynamically growing input of the non-faulty parties.
 
 # Introduction
 ---
@@ -12,7 +12,7 @@ Security means preserving the correctness of the outputs as well as the privacy 
 
 When studying an asynchronous system, we must not assume there exists a global clock. We must know that the messages may be arbitrarily delayed, , but eventually received, and that the order of arrival, may be different from the order of departure of the messages.
 
-It's also known that the output of any *n-party* protocol in the presence of *t* potencial [fail-stop faults](Fail-Stop Fault.md) can be based on only *n-t* inputs, since *t* inputs may never join computation.
+It's also known that the output of any *n-party* protocol in the presence of *t* potencial [fail-stop faults](Fail-Stop%20Fault.md) can be based on only *n-t* inputs, since *t* inputs may never join computation.
 
 The ideal scenario is a scenario for secure computation that consists of adding a trusted party to the existing network. Since the party is present, no faults happen, and if we can equal irl computations to this ideal scenario, then said computations are secure. So we must show that whatever can be computed there securely, can be computed in a secure manner when the trusted party is gone.
 
@@ -20,13 +20,13 @@ This paper defines new tools: a [Perfect Asynchronous Verifiable Secret Sharing]
 
 # Definitions
 ---
-A computation in the asynchronous model is a sequence of steps. In each step a single party is active, and said party is activated by receiving a message. After it performs an internal computation, possibly sending messages to outgoing channels. The order of the steps is controlled by an [computationally unbounded](computationally unbounded.md) [scheduler](scheduler.md). Since the channels are private, we consider it an [oblivious scheduler](oblivious scheduler.md), the only information known is the origin and destination of the message being sent. Knowing the contents would violate the system's security.
+A computation in the asynchronous model is a sequence of steps. In each step a single party is active, and said party is activated by receiving a message. After it performs an internal computation, possibly sending messages to outgoing channels. The order of the steps is controlled by an [computationally unbounded](computationally%20unbounded.md) [scheduler](scheduler.md). Since the channels are private, we consider it an [oblivious scheduler](oblivious%20scheduler.md), the only information known is the origin and destination of the message being sent. Knowing the contents would violate the system's security.
 
-Some parties may be faulty, in a [Fail-Stop Fault](Fail-Stop Fault.md) a party may stop sending messages at some time, but we assume that said parties still receive messages and output. The faults considered, however, are only static, that is, the set of faulty parties is determined and fixed at the beginning of the computation, and the attacker does not corrupt parties as they wish as the protocol goes on.
+Some parties may be faulty, in a [Fail-Stop Fault](Fail-Stop%20Fault.md) a party may stop sending messages at some time, but we assume that said parties still receive messages and output. The faults considered, however, are only static, that is, the set of faulty parties is determined and fixed at the beginning of the computation, and the attacker does not corrupt parties as they wish as the protocol goes on.
 
 For a computation to be secure it needs to be equivalent to the parties sending their input to a trusted party, said party computing the output and sending it back to the original party. As said before, the parties cannot wait for more than n-t inputs in order to proceed with the computation.
 
-The following scenario is the recommended: bad parties may be able to combine their inputs and alter them, without the good parties knowing. The parties send their inputs to the trusted parties, however the scheduler delivers the messages in an arbitrary manner, arriving only the messages of the parties on a core subset of size at least *n-t*, which is independent of the inputs. Upon receiving it, C computes some predefined [estimation function](estimation function.md) based on C and the inputs of its parties, where we set the inputs of the parties not in C to 0. Next, the trusted party sends the function value and the Core set to all the parties. The good parties will then output what they received from the trusted parties, while the bad output some arbitrary function of information gathered or created during computations.
+The following scenario is the recommended: bad parties may be able to combine their inputs and alter them, without the good parties knowing. The parties send their inputs to the trusted parties, however the scheduler delivers the messages in an arbitrary manner, arriving only the messages of the parties on a core subset of size at least *n-t*, which is independent of the inputs. Upon receiving it, C computes some predefined [estimation function](estimation%20function.md) based on C and the inputs of its parties, where we set the inputs of the parties not in C to 0. Next, the trusted party sends the function value and the Core set to all the parties. The good parties will then output what they received from the trusted parties, while the bad output some arbitrary function of information gathered or created during computations.
 
 In order to simplify, we consider that the bad parties and the scheduler are under one coalition and represent one adversarial entity, with unlimited computational power.
 
@@ -47,9 +47,9 @@ Every good party will eventually complete the protocol, provided that the accumu
 
 # Fail-Stop Faults
 ---
-Its possible to securely t-compute any function with input partitioned among n parties, as long as n>=3t +1, and the faults we are dealing with are [Fail-Stop](Fail-Stop Fault.md). The construction is also resilient against parties which only try to gather information but otherwise follow the protocol. For it to work we assume there is a commonly known field *F* , and that the parties have an arithmetic circuit for computing *f*, with addition and multiplication gates of in-degree 2.
+Its possible to securely t-compute any function with input partitioned among n parties, as long as n>=3t +1, and the faults we are dealing with are [Fail-Stop](Fail-Stop%20Fault.md). The construction is also resilient against parties which only try to gather information but otherwise follow the protocol. For it to work we assume there is a commonly known field *F* , and that the parties have an arithmetic circuit for computing *f*, with addition and multiplication gates of in-degree 2.
 
-Each party shares their input among other parties with smth akin to [Shamir's Secret Sharing](Shamir's Secret Sharing.md) scheme, namely, the party picks a pi() of degree t, with pi(0) = xi and sends pi(j) to the jth party.
+Each party shares their input among other parties with smth akin to [Shamir's Secret Sharing](Shamir%27s%20Secret%20Sharing.md) scheme, namely, the party picks a pi() of degree t, with pi(0) = xi and sends pi(j) to the jth party.
 
 Next, the parties agree, using ACS, on a common set, *C* of parties that have shared their input successfully. Once that's done they proceed to compute *fc(x<sup>-></sup>)*. Firstly the inputs of the parties not in *C* are set to 0 and then the parties evaluate the given circuit gate by gate. For each gate, the parties use their shares of the input lines to jointly and securely generate a random poly of degree t, where Pi compute p(i) and p(0) is the output value of the gate. Once their share is computed, the parties send a message. When a party receives *n-t* of those messages, they invoke a final reconstruction sub-protocol. They reveal their share of the output line and interpolate the value from the received shares.
 
@@ -65,7 +65,7 @@ Degree reduction makes uses of [matrix](Matrix.md) properties, since its known t
 
 # Byzantine faults
 ---
-The byzantine protocol is almost the same as the previous one but adapted to this kind of faults in the system. This adaptation is done by extending [Shamir's Secret Sharing](Shamir's Secret Sharing.md) to an [AVSS](.md) scheme, and then by modifying the multiplication step. Both extensions make use of the methods for [Generalized Reed-Solomon codes](Generalized Reed-Solomon codes.md).
+The byzantine protocol is almost the same as the previous one but adapted to this kind of faults in the system. This adaptation is done by extending [Shamir's Secret Sharing](Shamir%27s%20Secret%20Sharing.md) to an [AVSS](.md) scheme, and then by modifying the multiplication step. Both extensions make use of the methods for [Generalized Reed-Solomon codes](Generalized%20Reed-Solomon%20codes.md).
 
 The [AVSS](.md) scheme is described for 4t + 1. While other schemes achieve a 3t +1, these have a small probability of errors, and as such the [Perfect Asynchronous Verifiable Secret Sharing](.md) was the one chosen.  A [VSS](VSS.md) consists of two sub-protocols. The first is the sharing protocol, in which a dealer shares a secret among other parties, and the second the reconstruction protocol, in which the secret is reconstructed from the shares generated. For it to work it needs to follow some properties:
 -  A good dealer should be able to share the secret in a reconstructible way

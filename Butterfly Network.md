@@ -9,7 +9,7 @@ Outputs:
 
 ## Offline prerequisites
 ---
-For the protocol to work, on one single iteration, it requires O(k/2 log k) secretly shared random bits as and O(k/2 log k) [Beaver triples](Beaver's trick.md) to be pre-computed. These will be used during the switch decision and the multiplications for those switches, respectively.
+For the protocol to work, on one single iteration, it requires O(k/2 log k) secretly shared random bits as and O(k/2 log k) [Beaver triples](Beaver%27s%20trick.md) to be pre-computed. These will be used during the switch decision and the multiplications for those switches, respectively.
 
 ## Stages
 ---
@@ -28,7 +28,7 @@ Use new random bits to apply the switch, permuting or not the paired messages. A
 
 ## Execution
 ---
-Each stage has k/2 switches, all the switches execute in parallel, and which one consumes one [Beaver triple](Beaver's trick.md) for its multiplication, as well as needs one communication round per layer for [batch reconstruction](.md).
+Each stage has k/2 switches, all the switches execute in parallel, and which one consumes one [Beaver triple](Beaver%27s%20trick.md) for its multiplication, as well as needs one communication round per layer for [batch reconstruction](.md).
 
 ## Properties
 ---

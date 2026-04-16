@@ -9,7 +9,7 @@ BA ensures:
 
 # How it works
 ---
-1.  Commander phase - Designate a commander using [commander selection protocols](Commander Selection.md) that broadcasts their value to all other processes.
+1.  Commander phase - Designate a commander using [commander selection protocols](Commander%20Selection.md) that broadcasts their value to all other processes.
 2. Relay phase - Recursively have other processes forward received value to everyone else for t+1 rounds.
 3. Decision phase - After collecting all received values a **majority function** is applied on the messages and the value decided is the output from the function.
 

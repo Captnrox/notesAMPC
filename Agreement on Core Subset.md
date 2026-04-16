@@ -9,8 +9,8 @@ ACS ensures:
 
 # How it works
 ---
-1. **Voting**: For each party in the system initiate or participate in an [ABA](Asynchronous Byzantine Agreement.md) instance for that party. If for the node, the party respects the desired property than participation should be with a 1. And the voting instance will decide if the party belongs on the core set or not.
-2. **Awaiting**: Wait until n-t [ABA](Asynchronous Byzantine Agreement.md) instances reach a output of 1. When they do so, enter 0 in all remaining instances.
+1. **Voting**: For each party in the system initiate or participate in an [ABA](Asynchronous%20Byzantine%20Agreement.md) instance for that party. If for the node, the party respects the desired property than participation should be with a 1. And the voting instance will decide if the party belongs on the core set or not.
+2. **Awaiting**: Wait until n-t [ABA](Asynchronous%20Byzantine%20Agreement.md) instances reach a output of 1. When they do so, enter 0 in all remaining instances.
 3. **Termination**: Output a set **Si** containing all the all the indices **j** that correspond to the instances that output 1, and terminate.
 
 # Thresholds

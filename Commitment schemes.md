@@ -9,7 +9,7 @@ CS ensures:
 1. Commit Phase - The committer selects a message _m_ from the message space and generates a commitment _c_ using a commitment function and auxiliary randomness _r_. The commitment _c_ is transmitted to the verifier while keeping _m_ and _r_ private. This establishes a cryptographic binding to the value _m_ at time _t_.
 2. Reveal Phase - At a later time _t' > t_, the committer discloses both the original message _m_ and the randomness _r_ (collectively called the "opening" or "decommitment"). The verifier executes a verification algorithm to check that the revealed values correctly correspond to the previously received commitment _c_.
 
-The exact details depends on the [implementation](Commitment scheme variations.md)
+The exact details depends on the [implementation](Commitment%20scheme%20variations.md)
 # Guarantee
 ---
 With a commitment scheme, we can verify that the information revealed by the committer is exactly what they originally locked in—they cannot fake it or change it after committing. The commitment acts as cryptographic proof that binds them to their original choice.

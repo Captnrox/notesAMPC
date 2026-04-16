@@ -1,4 +1,4 @@
-A fundamental mathematical technique in [secret sharing](Secret Sharing.md) and **distributed computing** that allows reconstructing a polynomial, and, therefore, a secret from a sufficient number of points. It's the core mechanism behind  [Shamir's Secret Sharing](Shamir's Secret Sharing.md) and **threshold cryptography**.
+A fundamental mathematical technique in [secret sharing](Secret%20Sharing.md) and **distributed computing** that allows reconstructing a polynomial, and, therefore, a secret from a sufficient number of points. It's the core mechanism behind  [Shamir's Secret Sharing](Shamir%27s%20Secret%20Sharing.md) and **threshold cryptography**.
 
 PI ensures:
 - **Uniqueness**: A single polynomial of degree t can be reconstructed from any **t+1** **distinct** points. A set of points can't generate 2 different polynomials of degree **t**.

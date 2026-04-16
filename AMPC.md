@@ -21,53 +21,53 @@ Regardless of the corruption method an adversary may act through static or dynam
 
 # AVSS
 ---
-[Polynomial Generation](Polynomial Generation.md)
-[Commitment schemes](Commitment schemes.md)
-[Private Authenticated Channel](Private Authenticated Channel.md)
-[On-line Error Correction](On-line Error Correction.md)
-[Asynchronous Reliable Broadcast](Asynchronous Reliable Broadcast.md)
-[(n,t)-Star]((n,t)-Star.md)
+[Polynomial Generation](Polynomial%20Generation.md)
+[Commitment schemes](Commitment%20schemes.md)
+[Private Authenticated Channel](Private%20Authenticated%20Channel.md)
+[On-line Error Correction](On-line%20Error%20Correction.md)
+[Asynchronous Reliable Broadcast](Asynchronous%20Reliable%20Broadcast.md)
+[(n,t)-Star](%28n%2Ct%29-Star.md)
 
 # Input Decision
 ---
-[Agreement on Core Subset](Agreement on Core Subset.md)
-[Asynchronous Byzantine Agreement](Asynchronous Byzantine Agreement.md)
-[Asynchronous Multivalue Byzantine Agreement](Asynchronous Multivalue Byzantine Agreement.md)
+[Agreement on Core Subset](Agreement%20on%20Core%20Subset.md)
+[Asynchronous Byzantine Agreement](Asynchronous%20Byzantine%20Agreement.md)
+[Asynchronous Multivalue Byzantine Agreement](Asynchronous%20Multivalue%20Byzantine%20Agreement.md)
 
 # Circuit Evaluation
 ----
-[Degree Reduction](Degree Reduction.md)
-[Linear Operations](Linear Operations.md)
-[Non-linear Operations](Non-linear Operations.md)
+[Degree Reduction](Degree%20Reduction.md)
+[Linear Operations](Linear%20Operations.md)
+[Non-linear Operations](Non-linear%20Operations.md)
 
 # Core Algebraic / Coding Primitives
 ---
-[Polynomial Interpolation](Polynomial Interpolation.md)
-[Reed Solomon](Reed Solomon.md)
-[On-line Error Correction](On-line Error Correction.md)
+[Polynomial Interpolation](Polynomial%20Interpolation.md)
+[Reed Solomon](Reed%20Solomon.md)
+[On-line Error Correction](On-line%20Error%20Correction.md)
 
 # Communication and Broadcast Primitives
 ---
-[Private Authenticated Channel](Private Authenticated Channel.md)
-[Consistent Broadcast](Consistent Broadcast.md)
-[Reliable Broadcast](Reliable Broadcast.md)
-[Asynchronous Reliable Broadcast](Asynchronous Reliable Broadcast.md)
+[Private Authenticated Channel](Private%20Authenticated%20Channel.md)
+[Consistent Broadcast](Consistent%20Broadcast.md)
+[Reliable Broadcast](Reliable%20Broadcast.md)
+[Asynchronous Reliable Broadcast](Asynchronous%20Reliable%20Broadcast.md)
 
 # Agreement / Asynchronous Consensus Primitives
 ---
-[Byzantine Agreement](Byzantine Agreement.md)
-[Asynchronous Byzantine Agreement](Asynchronous Byzantine Agreement.md)
-[Agreement on Core Subset](Agreement on Core Subset.md)
+[Byzantine Agreement](Byzantine%20Agreement.md)
+[Asynchronous Byzantine Agreement](Asynchronous%20Byzantine%20Agreement.md)
+[Agreement on Core Subset](Agreement%20on%20Core%20Subset.md)
 
 # Commitment / Verification Primitives
 ---
-[Commitment schemes](Commitment schemes.md) 
-[Feldman commitments](Commitment scheme variations#Feldman Commitments.md)
-[Pedersen commitments](Commitment scheme variations#Pedersen commitments.md)
-[(n,t)-Star]((n,t)-Star.md)
+[Commitment schemes](Commitment%20schemes.md) 
+[Feldman commitments](Commitment%20scheme%20variations.md#Feldman Commitments)
+[Pedersen commitments](Commitment%20scheme%20variations.md#Pedersen commitments)
+[(n,t)-Star](%28n%2Ct%29-Star.md)
 Polynomial commitments 
 # Papers
 ----
-[Long Live The Honey Badger Robust Asynchronous DPSS and its Applications](Long Live The Honey Badger Robust Asynchronous DPSS and its Applications.md)
-[Efficient Asynchronous Verifiable Secret Sharing and Multiparty Computation](Efficient Asynchronous Verifiable Secret Sharing and Multiparty Computation.md)
-[Asynchronous Secure Computation](Asynchronous Secure Computation.md)
+[Long Live The Honey Badger Robust Asynchronous DPSS and its Applications](Long%20Live%20The%20Honey%20Badger%20Robust%20Asynchronous%20DPSS%20and%20its%20Applications.md)
+[Efficient Asynchronous Verifiable Secret Sharing and Multiparty Computation](Efficient%20Asynchronous%20Verifiable%20Secret%20Sharing%20and%20Multiparty%20Computation.md)
+[Asynchronous Secure Computation](Asynchronous%20Secure%20Computation.md)

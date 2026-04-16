@@ -6,7 +6,7 @@ RS ensures:
 
 # How it works
 ---
-1. **Prime Definition**:  For the proper functioning of the arithmetic, due to the exponential grow, a prime **p** bigger than the values of the messages must be picked. This value is used to define a [finite field](Galois Fields.md) used in the operations.
+1. **Prime Definition**:  For the proper functioning of the arithmetic, due to the exponential grow, a prime **p** bigger than the values of the messages must be picked. This value is used to define a [finite field](Galois%20Fields.md) used in the operations.
 2. **Label the packets**: identify the packets to be sent in order to ease the operations
 3. **Tolerance and interpolation**: Interpolate the polynomial using the labeled messages to be sent and define the tolerance, that is, the number of redundant packets to be sent. Using the interpolated polynomial, give the values for the redundant packets
 4. **Send and receive**
