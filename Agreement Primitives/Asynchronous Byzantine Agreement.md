@@ -1,4 +1,4 @@
-Solves the fundamental consensus problem where processes must **agree on a single value** despite Byzantine failures in **asynchronous networks** where messages can be delayed arbitrarily. Unlike synchronous BA, deterministic ABA requires circumventing the **[FLP impossibility](Others/FLP%20impossibility.md)** through randomization, failure detectors, or partial synchrony.
+Solves the fundamental consensus problem where processes must **agree on a single value** despite Byzantine failures in **asynchronous networks** where messages can be delayed arbitrarily. Unlike synchronous BA, deterministic ABA requires circumventing the **[FLP impossibility](../Others/FLP%20impossibility.md)** through randomization, failure detectors, or partial synchrony.
 
 ABA ensures:
 
