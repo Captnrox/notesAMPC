@@ -11,7 +11,7 @@ User mainly in blockchain environments, where the commander picked is the valida
 
 # Multi Leader
 ---
-All processes act as leaders, run multiple [BA](Byzantine%20Agreement.md) in parallel, combine the results ensuring more robust outcomes.
+All processes act as leaders, run multiple [BA](../Agreement%20Primitives/Byzantine%20Agreement.md) in parallel, combine the results ensuring more robust outcomes.
 
 # Leader Election
 ---
