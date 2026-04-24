@@ -60,8 +60,8 @@ Regardless of the corruption method an adversary may act through static or dynam
 # Commitment / Verification Primitives
 ---
 [Commitment schemes](Commitment%20Primitives/Commitment%20schemes.md) 
-[Feldman commitments](Commitment%20scheme%20variations.md#Feldman Commitments)
-[Pedersen commitments](Commitment%20scheme%20variations.md#Pedersen commitments)
+[Feldman commitments](Commitment%20Primitives/Commitment%20scheme%20variations.md#Feldman%20Commitments)
+[Pedersen commitments](Commitment%20Primitives/Commitment%20scheme%20variations.md#Pedersen%20commitments)
 Polynomial commitments 
 # Papers
 ----
