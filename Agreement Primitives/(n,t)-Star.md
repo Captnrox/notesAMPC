@@ -6,7 +6,7 @@ The (n,t)**-star** is a graph-theoretic structure used as a verification primiti
 - **Agreement**:If one honest party finds the star, then all the parties will find the star.
 - **Uniqueness:** Finding a (n,t)-star ensures there's only one possible polynomial to be reconstructed.
 - **Secrecy**: As long as the dealer is honest, malicious parties gain no information about the secret until the reconstruction.
-- **Error Correction**:T he protocol can reconstruct the correct secret even if up to t parties send wrong or missing values. By using [On-line Error Correction](On-line%20Error%20Correction.md).
+- **Error Correction**:T he protocol can reconstruct the correct secret even if up to t parties send wrong or missing values. By using [On-line Error Correction](../Encoding-Decoding%20Primitives/On-line%20Error%20Correction.md).
 
 # How it works
 ---
@@ -14,7 +14,7 @@ The (n,t)**-star** is a graph-theoretic structure used as a verification primiti
 2. **Cross-Check**: Parties exchange values with each other, fi(j) checks gj(i) and fj(i) checks gi(j). If both values match they broadcast message (OK,i,j).
 3. **Trust Graph**: Each party maintains their local OK graph where edge i, j, exists if both ok'ed each other.
 4. **Trust Core**: A party accepts the secret only when it identifies a pair of sets (C,D) where ∣C∣≥n−2t and ∣D∣≥n−t, such that every node in C is connected to every node in D, that is, when the party find the star in its graph
-5. **Agreement on star**: When a star is found, the party sends it to other parties. Those parties will verify it against their own graph and check. Once that star is validated, the secret is accepeted as existing(correctly shared initially) but it might've been incorrectly shared between parties, or have any mistakes, in this case [OEC](On-line%20Error%20Correction.md) is used to reconstruct the secret correctly.
+5. **Agreement on star**: When a star is found, the party sends it to other parties. Those parties will verify it against their own graph and check. Once that star is validated, the secret is accepeted as existing(correctly shared initially) but it might've been incorrectly shared between parties, or have any mistakes, in this case [OEC](../Encoding-Decoding%20Primitives/On-line%20Error%20Correction.md) is used to reconstruct the secret correctly.
 # Thresholds
 ---
 Total parties must be **n > 4t**, C must have **n - 2t** nodes, and D must have **n-t** nodes.

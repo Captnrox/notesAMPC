@@ -71,8 +71,8 @@ Primitives used to agree on values on an asynchronous or byzantine network. Thes
 ---
 Primitives that ensure that what was sent corresponds to what is received. Usually is employed in AVSS to make sure that the shares given received from the dealer are in fact the ones they claim to have sent.
 [Commitment schemes](Commitment%20Primitives/Commitment%20schemes.md) 
-[Feldman commitments](Commitment%20scheme%20variations.md#Feldman Commitments)
-[Pedersen commitments](Commitment%20scheme%20variations.md#Pedersen commitments)
+[Feldman commitments](Commitment%20Primitives/Commitment%20scheme%20variations.md#Feldman%20Commitments)
+[Pedersen commitments](Commitment%20Primitives/Commitment%20scheme%20variations.md#Pedersen%20commitments)
 Polynomial commitments 
 # Papers
 ----
